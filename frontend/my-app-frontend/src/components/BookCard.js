@@ -9,10 +9,14 @@ function BookCard({ book, onDeleteBook }) {
       .then(() => onDeleteBook(book));
   }
 
+  function handleEditBook() {
+    console.log("clicked book:", book);
+  }
+
   return (
     <li key={book.id}>
       Title: {book.title} <button onClick={handleDeleteBook}>Delete</button>{" "}
-      <br /> <button>Edit</button>
+      <br /> <button onClick={handleEditBook}>Edit</button>
       <ul>
         <li> Genre: {book.genre}</li>
       </ul>

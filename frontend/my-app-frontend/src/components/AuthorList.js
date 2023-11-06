@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import AuthorForm from "./AuthorForm";
 import BookCard from "./BookCard";
 
-function AuthorList({ authors, setAuthors, id, name, hometown, books }) {
+function AuthorList({ authors, setAuthors, name, hometown, books }) {
   const handleDeleteBook = (deletedBook) => {
     const updatedAuthors = authors.map((author) => {
       if (author.id === deletedBook.author_id) {

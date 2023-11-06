@@ -22,7 +22,6 @@ function Authors() {
         <AuthorList
           key={author.id}
           authors={authors}
-          id={author.id}
           name={author.name}
           hometown={author.hometown}
           books={author.books}
